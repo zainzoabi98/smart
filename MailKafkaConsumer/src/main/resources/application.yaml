@@ -1,0 +1,23 @@
+---
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+  logging:
+    level:
+      org:
+        springframework:
+          web: DEBUG
+        hibernate: ERROR
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: #####@gmail.com
+    password: #####
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  port: 8082
